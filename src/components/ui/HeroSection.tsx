@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Spotlight } from "./Spotlight";
+import { Button } from "./moving-border";
 
 export default function HeroSection() {
     return (
@@ -10,7 +11,7 @@ export default function HeroSection() {
         fill="white"
       />            
             
-            <div className="p-4 relative z-10 w-full">
+            <div className="p-4 relative z-10 w-full items-center justify-center">
                 <h1 className="text-4xl mt-20 md:mt-0 md:text-7xl font-bold bg-clip-text text-transparent 
                 bg-gradient-to-b from-neutral-50 to-neutral-400 text-center">
                      Master The Art Of Music 
@@ -21,9 +22,13 @@ export default function HeroSection() {
                     sing and danceLearn to play the guitar,
                     sing and dance. Learn to play the guitar, sing and dance
                     . Learn to play the guitar, sing and dance </p>
-                <div className="mt-4">
+                <div className="flex mt-4 items-center justify-center">
                     <Link href={"/cources"}>
-                    Explore Cources
+                        <Button borderRadius="1.75rem"
+                            className="bg-white dark:bg-black text-black 
+                            dark:text-white border-neutral-200 dark:border-slate-800">
+                            Explore Cources
+                        </Button>                    
                     </Link>
                 </div>
             </div>
