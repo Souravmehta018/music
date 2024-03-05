@@ -1,5 +1,6 @@
 import HeroSection from '../components/HeroSection';
 import FeaturedCources from '../components/FeaturedCources';
+import WhyChooseUs from '@/components/WhyChooseUs';
 
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     justify-center bg-grid-white/[0.02]">
         <HeroSection />
         <FeaturedCources />
+        <WhyChooseUs />
     </main>
   );
 }
